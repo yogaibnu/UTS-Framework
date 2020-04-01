@@ -7,12 +7,13 @@ import Footer from './components/Footer';
 
 class App extends Component {
   render() {
-    return
+    return (
       <div>
         <Navbar />
         <Footer />
       </div>
-  };
+    );
+  }
 }
 
 export default App;
