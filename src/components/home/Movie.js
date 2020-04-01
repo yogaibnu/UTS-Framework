@@ -52,6 +52,8 @@ export class Movie extends Component {
                     <div className="cold-md-12">
                         <h3>About</h3>
                         {movie.Plot}
+                        <br></br>
+                        <br></br>
                         <a
                             href={'https://www.imdb.com/title' + movie.imdID}
                             target="_blank"
