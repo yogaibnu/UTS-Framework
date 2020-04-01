@@ -29,7 +29,7 @@ export class SearchForm extends Component {
                             className="form-control"
                             name="searchText"
                             placeholder="Search Movies, TV Series.."
-                            onChange={this.onChange}>
+                            onChange={this.onChange} required>
                         </input>
                         <button type="submit" className="btn btn-primary btn-bg mt-3">
                             Search
