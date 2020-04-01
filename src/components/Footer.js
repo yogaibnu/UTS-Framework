@@ -10,7 +10,8 @@ function Footer() {
                         <span className="text-warning font-weight-normal">
                             Yoga Ibnudinata
                         </span>
-                        <a href="http://ww.omdbapi.com/"
+                        , Menggunakan React Js & Redux Js Berintegrasi dengan API 
+                        <a href="http://www.omdbapi.com/"
                            target="_blank">
                            OMDB        
                         </a>
