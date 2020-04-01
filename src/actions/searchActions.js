@@ -19,3 +19,13 @@ export const fetchMovies = text => dispatch => {
         }))
         .catch(err => console.log(err));
 };
+
+export const fetchMovie = id => dispatch => {
+    axios
+    .get(`http://www.omdbapi.com/?apikey=${APIKey}&i=${id}`)
+    .then(response => dispatch({
+        type: FETCH_MOVIES,
+        payload: response.data
+    }))
+    .catch(err => console.log(err));
+};
