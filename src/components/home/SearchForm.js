@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Provider} from 'react-redux';
+
 import {searchMovie} from '../../actions/searchActions';
 
 export class SearchForm extends Component {
