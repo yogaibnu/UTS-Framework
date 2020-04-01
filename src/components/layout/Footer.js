@@ -12,7 +12,8 @@ function Footer() {
                         </span>
                         , Menggunakan React Js & Redux Js Berintegrasi dengan API 
                         <a href="http://www.omdbapi.com/"
-                           target="_blank">
+                           target="_blank"
+                           rel="noopener noreferrer">
                            OMDB        
                         </a>
                     </div>
