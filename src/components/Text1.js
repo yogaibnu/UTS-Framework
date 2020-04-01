@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Text1 = () => {
-    return <p>Hello from Text1 as function component</p>
+    return <span className="fab fa-imdb"></span>;
 };
 
 export default Text1;
