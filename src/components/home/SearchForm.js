@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import {connect} from 'react-redux';
 
-import {searchMovie} from '../../actions/searchActions';
+import {searchMovie, fetchMovies} from '../../actions/searchActions';
 
 export class SearchForm extends Component {
 
@@ -17,7 +17,7 @@ export class SearchForm extends Component {
                     <h1 class="display-4 mb-3">
                         <i className="fa fa-search" /> Search for a movie, TV series..
                     </h1>
-                    <form id="searchForm">
+                    <form id="searchForm" onSubmit={this.onSubmit}>
                         <input
                             type="text"
                             className="form-control"
@@ -39,4 +39,4 @@ const mapStateToProps = state => ({
     text: state.movies.text
 })
 
-export default connect(mapStateToProps, {searchMovie})(SearchForm);
+export default connect(mapStateToProps, {searchMovie, fetchMovies})(SearchForm);
