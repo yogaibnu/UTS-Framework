@@ -10,6 +10,11 @@ export class SearchForm extends Component {
         this.props.searchMovie(e.target.value);
     }
 
+    onSubmit = e => {
+        e.preventDefault();
+        this.props.fetchMovies(this.props.text)
+    }
+
     render() {
         return (
             <div class="jumbotron jumbotron-fluid mt-5 text-center">
